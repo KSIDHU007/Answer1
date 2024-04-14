@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Services</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Meown</h1>
+  <nav>
+    <a href="index.html">Blog</a>
+    <a href="Contact.html">Contact Us</a>
+    <a href="Services.html">Services</a>
+  </nav>
+</header>
+
+<main>
+  <section id="grooming">
+    <h2>Grooming</h2>
+    <div class="grid-container">
+      <div class="grooming-service">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdACKPk_qCl88Z2eTjo2bXkpcJNgEcyjCuug&s" alt="Grooming Service 1">
+        <h3>Full Grooming Package</h3>
+        <p>Our full grooming package includes a gentle bath with cat-friendly shampoo, nail trimming, ear cleaning, and a stylish haircut if desired.</p>
+      </div>
+      <div class="grooming-service">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvm9yI-B4eQIC2JJK-lOxkGA3aa5Jt7ws1k5hjbPB3-g&s" alt="Bath and Brush">
+        <h3>Bath and Brush</h3>
+        <p>Keep your cat clean and looking sharp with our bath and brush service. We'll wash your cat with specially formulated shampoo and give them a thorough brushing.</p>
+      </div>
+      <div class="grooming-service">
+        <img src="https://luckydawgsalongrooming.com/wp-content/uploads/2018/04/cat-grooming-services.jpeg" alt="Nail Trimming">
+        <h3>Nail Trimming</h3>
+        <p>Ensure your cat's claws are kept at a safe and comfortable length with our professional nail trimming service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pets-hotel">
+  <h2>Pets Hotel</h2>
+  <button class="collapsible">Hotel Details:</button>
+  <div class="content">
+    <p>Our pets hotel offers cozy and secure accommodation for cats. Each room is equipped with comfortable bedding, toys, and litter boxes. We also provide individual attention and playtime for each cat.</p>
+    <p>Additional amenities include:</p>
+    <ul>
+      <li>24/7 on-site staff for supervision and care</li>
+      <li>Temperature-controlled environment for comfort</li>
+      <li>Regular cleaning and sanitization</li>
+      <li>Customizable meal plans based on dietary needs</li>
+      <li>Optional grooming services during their stay</li>
+      <li>Access to outdoor enclosures for supervised outdoor play</li>
+    </ul>
+    <p>Whether your cat is staying for a day or an extended period, we ensure a safe and enjoyable experience for all our furry guests.</p>
+  </div>
+</section>
+
+
+  <section id="pet-day-camp">
+    <h2>Pet Day Camp</h2>
+    <div class="collapsible-set">
+      <button class="collapsible">Day Camp Option 1</button>
+      <div class="content">
+	  <h3>Outdoor Paws-ibilities</h3>
+        <p>Let your cat enjoy a day of fun and socialization in our this day camp option. They'll have access to the following:</p>
+        <ul>
+          <li>Interactive play sessions</li>
+          <li>Climbing structures and toys</li>
+          <li>Supervised interaction with other friendly cats</li>
+          <li>Rest areas for relaxation</li>
+        </ul>
+      </div>
+      
+      <button class="collapsible">Day Camp Option 2</button>
+      <div class="content">
+        <h3>Outdoor Paws-ibilities</h3>
+        <p>Join our this day camp option for exciting activities including:</p>
+        <ul>
+          <li>Interactive puzzle games</li>
+          <li>Supervised outdoor exploration in our enclosed cat garden</li>
+          <li>Arts and crafts sessions</li>
+          <li>Snuggle time with our staff</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <h2>References</h2>
+	<ul>
+		<li><a href="#top">Grooming</a></li>
+		<li><a href="#pets-hotel">Pets Hotel</a></li>
+		<li><a href="#pet-day-camp">Pet Day Camp</a></li>
+	</ul>
+
+  <br>
+    <img src="https://i0.wp.com/thecatspyjamas.au/wp-content/uploads/2023/06/Untitled.jpg?fit=1920%2C1080&ssl=1" alt="Grooming Service 1">
+</main>
+
+<footer>
+  <p>Made by &copy; Sidhu.</p>
+</footer>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
